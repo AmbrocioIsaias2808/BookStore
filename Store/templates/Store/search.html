@@ -1,0 +1,62 @@
+{% extends 'Store/base.html' %}
+{% load static%}
+
+{% block estilos%}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/modalbox.css' %}"/>
+{% endblock %}
+
+
+{% block content %}
+
+{% for Libros in RBusqueda%}
+<div class="Mbook" style="background-image: url('{{Libros.Portada.url}}');">
+<a class="link" href="#" onclick="clickmodal('{{Libros.ISBN}}')">
+    <div  class="info">
+    <p class="MTitulo">{{Libros.Titulo}}</p>
+    <p class="MAutor">Autor: {{Libros.Autor}}</p>
+    <p class="MDes">Sinopsis: <br/>{{Libros.Descripcion|slice:":200"}}...</p>
+    <p class="MGen">Genero: {{Libros.get_Genero_display}}</p>
+    <p class="MPrecio"> Precio: ${{Libros.Precio}} </p>
+</div>
+    </a>
+</div>
+<!--Codigo de Modalbox-->
+<!-- The Modal -->
+<div id="{{Libros.ISBN}}" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+    <span class="{{Libros.ISBN}} close" onclick="cerrar()">&times;</span>
+    <h2 class="Titulo">{{Libros.Titulo}}</h2>
+  </div>
+    <div class="modal-body">
+        <div class="Mbook" style="background-image: url('{{Libros.Portada.url}}');"></div>
+        <p class="Autor"><b>Autor:</b> {{Libros.Autor}}</p>
+        <p class="Des"><b>Sinopsis:</b> <br/>{{Libros.Descripcion}}...</p>
+        <p class="Ed"><b>Editorial:</b> {{Libros.Editorial}} <b class="TAB">Edicion:</b>{{Libros.Edicion}} <b class="TAB">Genero:</b> {{Libros.get_Genero_display}}</p>
+        <p class="Precio"> <b>Precio:</b> ${{Libros.Precio}} </p>
+  </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+<!--Fin del codigo de modal box-->
+
+
+
+{%endfor%}
+
+
+{% endblock %}
+
+
+
+{% block scripts%}
+<script src="{% static 'js/modalbox.js' %}" ></script>
+{% endblock%}

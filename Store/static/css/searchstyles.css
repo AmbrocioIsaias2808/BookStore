@@ -1,0 +1,59 @@
+.Mbook{
+width:256px;
+height:400px;
+background-color:gray;
+background-position: 50% 0%;
+background-repeat: no-repeat;
+background-size: 256px 400px;
+margin: 1em 1em 1em 1em;
+float:left;
+}
+
+.info{
+margin-top:-5px;
+height:400px;
+width:256px;
+background-color: rgba(0, 0, 0, 0);
+}
+
+.info:hover{
+background-color: rgba(0, 0, 0, 0.6);
+color:white;
+}
+
+.info p{
+margin-left:0.5em;
+margin-right:0.5em;
+color:rgba(0, 0, 0, 0);
+}
+
+.info:hover p{
+font-weight:bold;
+color:white;
+}
+
+.link{
+text-decoration:none;
+}
+
+
+/* Estilos de la informacion presentada */
+
+.MTitulo{
+margin-top:5px;
+text-align:center;
+color:#fce24c;
+font-size:2em;
+}
+.MAutor{
+margin-top:-1.5em;
+}
+
+.MDes{
+text-align:justify;
+}
+
+.MPrecio{
+text-align:center;
+font-size:2em;
+}

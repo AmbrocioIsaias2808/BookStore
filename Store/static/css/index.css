@@ -1,0 +1,43 @@
+body{
+background-color:gray;
+}
+
+section{
+height:30em;
+width:100%;
+float:left;
+}
+
+.doodle{
+margin:auto;
+margin-top:0.5em;
+background-color:;
+width:50%;
+color:black;
+font-size:5em;
+text-align:center;
+font-weight:bold;
+}
+
+.contenedor-input{
+
+background-color:;
+width:20%;
+margin:auto;
+margin-top:2em;
+}
+
+.ctexto{
+width:100%;
+}
+.ctexto[type=text]{
+border-radius:10px;
+padding: 5px;
+background-color: white;
+color:red;
+font-size:1.2em;
+height: 25px;
+color: #666;
+border: none;
+padding: 2px;
+}
