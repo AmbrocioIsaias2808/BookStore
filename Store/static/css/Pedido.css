@@ -1,0 +1,33 @@
+.search-bar-div, .principal-menu li, aside{
+display:none;
+}
+
+.logo{
+margin-top:-0.4em;
+color:#069370;
+height:50px;
+font-size:36px;
+line-height:60px;
+padding:0 20px;
+background-color:;
+box-sizing:border-box;
+float:left;
+font-weight:700;
+text-decoration:none;
+
+}
+
+header{
+position:relative;
+max-width:100%;
+background-color: #fff;
+box-sizing:border-box;
+border-radius:4px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+padding: 10px;
+}
+
+
+.User_Data{
+background-color:white;
+}

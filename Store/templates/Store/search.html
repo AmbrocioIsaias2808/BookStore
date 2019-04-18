@@ -30,15 +30,36 @@
     <span class="{{Libros.ISBN}} close" onclick="cerrar()">&times;</span>
     <h2 class="Titulo">{{Libros.Titulo}}</h2>
   </div>
-    <div class="modal-body">
-        <div class="Mbook" style="background-image: url('{{Libros.Portada.url}}');"></div>
-        <p class="Autor"><b>Autor:</b> {{Libros.Autor}}</p>
+      <div class="modal-body">
+       <!--Modal body code-->
+        <div class="book-container">
+      <div class="book" style="background-image: url('{{Libros.Portada.url}}');">
+      </div>
+    <div class="informacion">
+
+	<p class="Autor"><b>Autor:</b> {{Libros.Autor}}</p>
         <p class="Des"><b>Sinopsis:</b> <br/>{{Libros.Descripcion}}</p>
         <p class="Ed"><b>Editorial:</b> {{Libros.Editorial}} <b class="TAB">Edicion:</b> {{Libros.Edicion}} <b class="TAB">Genero:</b> {{Libros.get_Genero_display}}</p>
         <div class="Compra">
         <p class="Precio"> <b>Precio:</b> ${{Libros.Precio}} </p>
-            <a class="Precio" href="#">Comprar</a>
+            <a class="Precio" href="{% url 'CrearPedido' ISBN=Libros.ISBN%}">Comprar</a>
+
+    <br/>
         </div>
+
+
+
+    <div class="fixbookcontainer"></div>
+</div>
+</div>
+       <!--Modal body code fin-->
+
+
+
+
+
+
+
   </div>
 
 

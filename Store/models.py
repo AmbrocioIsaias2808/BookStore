@@ -31,13 +31,13 @@ class Libros(models.Model):
 
 class Stock(models.Model):
     ISBN=models.ForeignKey("Libros",verbose_name="ISBN ",db_column="ISBN",on_delete=models.CASCADE, primary_key=True)
-    Cantidad=models.IntegerField(verbose_name="Cantidad", db_column="Cantidad", default=0)
+    CantidadInv=models.IntegerField(verbose_name="Cantidad", db_column="Cantidad", default=0)
 
     def alta(self):
         self.save()
 
     def __str__(self):
-        return "{} : {}".format(self.ISBN,self.Cantidad)
+        return "{} : {}".format(self.ISBN,self.CantidadInv)
 
     class Meta:
         db_table = "Stock"
@@ -47,10 +47,10 @@ class Pedidos(models.Model):
                                       time.strftime("%M"), time.strftime("%d"), time.strftime("%H"),
                                       str(random.randrange(1000, 9999)))
     Referencia=models.CharField(null=False,max_length=16,verbose_name="Referencia ", db_column="Referencia",primary_key=True,default=reference)
-    ISBN=models.OneToOneField("Libros",db_column="ISBN",verbose_name="ISBN", on_delete=models.CASCADE)
+    ISBN=models.ForeignKey("Libros",db_column="ISBN",verbose_name="ISBN", on_delete=models.CASCADE)
     Cantidad=models.IntegerField(default=0, verbose_name="Cantidad ", db_column="Cantidad")
     Total=models.DecimalField(max_digits=10,decimal_places=2, verbose_name="Total: ", db_column="Total")
-    FechaDePedido=models.DateField(default=timezone.now())
+    FechaDePedido=models.DateField(default=timezone.now(), verbose_name="Fecha De Pedido")
     Nombre=models.CharField(max_length=50, verbose_name="Nombre ", db_column="Cliente")
     Email=models.EmailField(verbose_name="Correo Electronico ", db_column="Email")
     Direccion=models.CharField(max_length=100,verbose_name="Direccion ", db_column="Direccion")

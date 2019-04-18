@@ -69,7 +69,7 @@ background-color:gray;
 background-position: 50% 0%;
 background-repeat: no-repeat;
 background-size: 256px 400px;
-margin: 5em 1em 1em 0.5em;
+margin: 0em 1em 1em 0.5em;
 float:left;
 }
 
@@ -101,8 +101,36 @@ margin-right:0.5em;
 margin-left:3em;
 }
 
+/*Codigo importado*/
+.book-container{
+background-color:;
+width:100%;
+position:relative;
+margin-top:1em;
+}
 
+.informacion{
+width:70%;
+float:right;
+background-color:;
+float:left;
+}
 
+.fixbookcontainer{
+clear:both;
+background-color:purple;
+}
+
+span{
+font-size:3em;
+display:block;
+text-align:right;
+margin-right:1em;
+background-color:;
+margin-bottom:0px;
+}
+
+/*Codigo importado*/
 
 
 
@@ -124,21 +152,26 @@ margin-left:3em;
 
 .Compra{
 margin:auto;
+margin-top:-1.7em;
 width:95%;
-background-color:red;
+background-color:;
 
 }
 
 .Compra p{
+margin-top:2em;
 text-align:center;
 padding:3px;
 font-size:3em;
 display:block;
-background-color:pink;
+background-color:;
 border-color:black;
+width:50%;
+margin-left:3em;
 }
 
 .Compra a{
+padding-bottom:5px;
 margin-top:-1em;
 display:block;
 font-size:3em;;
@@ -148,5 +181,113 @@ color:black;
 font-weight:bold;
 background-color:#ef8d2e;
 width:50%;
+color:white;
 margin-left:3em;
+}
+
+@media (min-width:1099px)and (max-width:1220px){
+
+.book{
+margin: 0 0 0 35%;
+}
+
+.Compra{
+margin:auto;
+margin-top:-1.7em;
+width:100%;
+
+}
+
+.informacion{
+width:100%;
+float:right;
+float:left;
+}
+
+.Compra p , .Compra a{
+margin-left:4.8em;
+}
+
+
+}
+
+
+@media (min-width:740px)and (max-width:1099px){
+
+
+.book{
+margin: 0 0 0 32%;
+}
+
+.Compra{
+margin:auto;
+margin-top:-1.7em;
+width:100%;
+
+}
+
+.informacion{
+width:100%;
+float:right;
+float:left;
+}
+
+
+.Compra p , .Compra a{
+margin-left:3em;
+}
+
+}
+
+@media (min-width:570px)and (max-width:740px){
+
+.book{
+margin: 0 0 0 25%;
+}
+
+
+.Compra{
+margin:auto;
+margin-top:-1.7em;
+width:100%;
+}
+
+.informacion{
+width:100%;
+float:right;
+float:left;
+}
+
+
+.Compra p , .Compra a{
+margin-left:2em;
+}
+
+}
+
+
+@media (min-width:377px)and (max-width:570px){
+
+.book{
+margin: 0 0 0 12%;
+}
+
+.Compra{
+margin:auto;
+margin-top:-1.7em;
+width:100%;
+
+}
+
+.informacion{
+width:100%;
+float:right;
+float:left;
+}
+
+
+.Compra p , .Compra a{
+font-size:1em;
+margin-left:4.4em;
+}
 }
