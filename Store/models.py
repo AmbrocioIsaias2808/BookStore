@@ -3,6 +3,7 @@ import datetime
 import random
 import time
 from django.utils import timezone
+from django.core.validators import MinValueValidator
 
 class Libros(models.Model):
     ISBN = models.CharField(max_length=20, primary_key=True, verbose_name="ISBN ", db_column="ISBN")
@@ -46,15 +47,16 @@ class Pedidos(models.Model):
     reference = "{}{}{}{}{}{}{}".format(time.strftime("%y"), time.strftime("%S"), time.strftime("%m"),
                                       time.strftime("%M"), time.strftime("%d"), time.strftime("%H"),
                                       str(random.randrange(1000, 9999)))
-    Referencia=models.CharField(null=False,max_length=16,verbose_name="Referencia ", db_column="Referencia",primary_key=True,default=reference)
+    Referencia=models.CharField(null=False,max_length=16,verbose_name="Referencia de pago:", db_column="Referencia",primary_key=True,default=reference)
     ISBN=models.ForeignKey("Libros",db_column="ISBN",verbose_name="ISBN", on_delete=models.CASCADE)
-    Cantidad=models.IntegerField(default=0, verbose_name="Cantidad ", db_column="Cantidad")
+    Cantidad=models.IntegerField(default=1, verbose_name="Cantidad ", db_column="Cantidad", validators=[MinValueValidator(1)])
     Total=models.DecimalField(max_digits=10,decimal_places=2, verbose_name="Total: ", db_column="Total")
     FechaDePedido=models.DateField(default=timezone.now(), verbose_name="Fecha De Pedido")
     Nombre=models.CharField(max_length=50, verbose_name="Nombre ", db_column="Cliente")
     Email=models.EmailField(verbose_name="Correo Electronico ", db_column="Email")
     Direccion=models.CharField(max_length=100,verbose_name="Direccion ", db_column="Direccion")
     CP=models.IntegerField(verbose_name="Codigo Postal", db_column="CP")
+    Telefono=models.IntegerField(default=0,verbose_name="Telefono", db_column="Telefono")
     status=(("VP","Verificando Pago"),("PV","Pago Verificado"),("PE","En Proceso de Envio"),("E","Enviado"),("R","Recibido"))
     Estatus=models.CharField(choices=status, default="VP", verbose_name="Estatus ", db_column="Estatus", max_length=2)
 

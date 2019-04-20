@@ -187,6 +187,14 @@ margin-left:3em;
 
 @media (min-width:1099px)and (max-width:1220px){
 
+.Titulo{
+color:black;
+font-size:2.5em;
+text-align:center;
+font-weight:bold;
+
+}
+
 .book{
 margin: 0 0 0 35%;
 }
@@ -214,6 +222,18 @@ margin-left:4.8em;
 
 @media (min-width:740px)and (max-width:1099px){
 
+.Titulo{
+color:black;
+font-size:2.5em;
+text-align:center;
+font-weight:bold;
+
+}
+
+
+.modal{
+height:150%;
+}
 
 .book{
 margin: 0 0 0 32%;
@@ -241,6 +261,19 @@ margin-left:3em;
 
 @media (min-width:570px)and (max-width:740px){
 
+.Titulo{
+color:black;
+font-size:2.5em;
+text-align:center;
+font-weight:bold;
+
+}
+
+
+.modal{
+height:150%;
+}
+
 .book{
 margin: 0 0 0 25%;
 }
@@ -266,7 +299,75 @@ margin-left:2em;
 }
 
 
-@media (min-width:377px)and (max-width:570px){
+@media (min-width:442px)and (max-width:570px){
+
+
+.Titulo{
+color:black;
+font-size:2em;
+text-align:center;
+font-weight:bold;
+
+}
+
+.modal{
+height:150%;
+}
+
+.book{
+margin: 0 0 0 12%;
+}
+
+.Compra{
+margin:auto;
+margin-top:-1.7em;
+width:100%;
+
+}
+
+.informacion{
+width:100%;
+float:right;
+float:left;
+}
+
+
+.Compra p , .Compra a{
+font-size:1em;
+margin-left:4.4em;
+}
+}
+
+
+@media (max-width:442px){
+
+.Titulo{
+color:black;
+font-size:2em;
+text-align:center;
+font-weight:bold;
+
+}
+
+.book{
+width:128px;
+height:200px;
+background-color:gray;
+background-position: 50% 0%;
+background-repeat: no-repeat;
+background-size: 128px 200px;
+margin: 0em 1em 1em 0.5em;
+float:left;
+}
+
+
+
+.modal-header{
+height:70px;
+}
+.modal{
+height:150%;
+}
 
 .book{
 margin: 0 0 0 12%;

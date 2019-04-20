@@ -1,0 +1,28 @@
+{% extends "Store/BasePedidoEnvio.html"%}
+{% load static%}
+
+{% block estilos_per %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/Pagos.css' %}"/>
+{% endblock %}
+
+{% block informacion%}
+<div class="Infoheader">Resumen del pedido:</div>
+
+        <div class="User_Data">
+            <p class="text"><b>Compra por: </b></p>
+             <p><b>Numero de Referencia:</b> {{Pedido.Referencia}}</p>
+            <p><b>Libro: </b>{{Libro.Titulo}}</p>
+             <p><b>Cantidad: </b>{{Pedido.Cantidad}}</p>
+             <p><b>Total:</b> ${{Pedido.Total}}</p>
+            <p class="text"><b>Datos de Contacto y envio</b></p>
+            <p><b>Nombre:</b> {{Pedido.Nombre}}</p>
+            <p><b>Correo electronico:</b> {{Pedido.Email}}</p>
+            <p><b>Telefono de contacto:</b> {{Pedido.Telefono}}</p>
+             <p><b>Direccion de Envio:</b> {{Pedido.Direccion}}</p>
+            <p><b>CP:</b> {{Pedido.CP}}</p>
+
+    </div>
+          <div class="Buy" >
+              <p ><a href="#" class="boton">Realizar pago</a></p>
+          </div>
+{%endblock%}

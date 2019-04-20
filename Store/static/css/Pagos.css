@@ -1,0 +1,26 @@
+.User_Data{
+margin-left:0.5em;
+margin-bottom:0.5em;
+margin-top:0.5em;
+border:1px solid #d4e3eb;
+float:left;
+}
+
+.User_Data p{
+margin-left:1em;
+}
+
+.text{
+margin-left:-3em;
+background-color:#f0f5f7;
+text-align:center;
+width:90%;
+}
+
+.Buy{
+margin-top:7.5em;
+}
+
+.Buy p{
+width:100%;
+}

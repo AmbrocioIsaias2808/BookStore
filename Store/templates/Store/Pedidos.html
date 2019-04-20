@@ -1,0 +1,26 @@
+{% extends "Store/BasePedidoEnvio.html"%}
+{% load static%}
+
+{% block informacion%}
+<div class="Infoheader">Informacion de Pedido</div>
+
+        <div class="User_Data">
+
+<form method="POST" class="post-form">{% csrf_token %}
+    <div id="disable">
+        {{ Inventario.as_table }}
+    </div>
+    <div id="Informacion_pedido">
+        {{ fPedido.as_p }}
+    </div>
+<button type="submit" id="boton">Save</button>
+    </form>
+    </div>
+
+          <div class="Buy" >
+
+              <p id="preciototal">Total: polinecio</p>
+              <p ><a href="#" class="boton" onclick="clickboton()">Comprar</a></p>
+
+          </div>
+{%endblock%}

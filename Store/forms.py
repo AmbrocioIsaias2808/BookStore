@@ -6,7 +6,7 @@ class FCrearPedido(forms.ModelForm):
 
     class Meta:
         model = Pedidos
-        fields = ("Referencia", 'ISBN',"Cantidad","Total","FechaDePedido","Nombre","Email","Direccion","CP")
+        fields = ("Referencia", 'ISBN',"Cantidad","Total","FechaDePedido","Nombre","Email","Telefono","Direccion","CP")
 
 class FSolicitarStock(forms.ModelForm):
 

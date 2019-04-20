@@ -39,7 +39,8 @@
 
 	<p class="Autor"><b>Autor:</b> {{Libros.Autor}}</p>
         <p class="Des"><b>Sinopsis:</b> <br/>{{Libros.Descripcion}}</p>
-        <p class="Ed"><b>Editorial:</b> {{Libros.Editorial}} <b class="TAB">Edicion:</b> {{Libros.Edicion}} <b class="TAB">Genero:</b> {{Libros.get_Genero_display}}</p>
+        <p class="Ed"><b>Editorial:</b> {{Libros.Editorial}} <b class="TAB">Edicion:</b> {{Libros.Edicion}}</p>
+        <p> <b>Genero:</b> {{Libros.get_Genero_display}}</p>
         <div class="Compra">
         <p class="Precio"> <b>Precio:</b> ${{Libros.Precio}} </p>
             <a class="Precio" href="{% url 'CrearPedido' ISBN=Libros.ISBN%}">Comprar</a>

@@ -1,11 +1,12 @@
 {% extends 'Store/base.html' %}
 {% load static%}
 
+
 {% block estilos%}
   <link rel="stylesheet" type="text/css" href="{% static 'css/Pedido.css' %}"/>
   <link rel="stylesheet" type="text/css" href="{% static 'css/modalbox.css' %}"/>
-
-
+{% block estilos_per%}
+{% endblock %}
 {% endblock %}
 
 
@@ -14,32 +15,13 @@
        <!--Modal body code-->
         <div class="book-container">
       <div class="book" style="background-image: url('{{Libro.Portada.url}}');">
+          {% block stock %}
+          {%endblock%}
       </div>
     <div class="informacion">
+    {% block informacion %}
 
-
-        <div class="User_Data">
-<form method="POST" class="post-form">{% csrf_token %}
-    <div id="disable">
-        {{ Inventario.as_table }}
-    </div>
-    <div id="Informacion_pedido">
-        {{ fPedido.as_p }}
-    </div>
-<button type="submit" class="save btn btn-default" id="boton">Save</button>
-    </form>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+        {%endblock%}
         </div>
 
 

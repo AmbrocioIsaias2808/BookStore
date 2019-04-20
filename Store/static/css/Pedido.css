@@ -1,5 +1,8 @@
-.search-bar-div, .principal-menu li, aside{
+
+
+.search-bar-div, .principal-menu li, aside, .menu-toggle{
 display:none;
+
 }
 
 .logo{
@@ -29,5 +32,134 @@ padding: 10px;
 
 
 .User_Data{
-background-color:white;
+width:50%;
+background-color:; /*----------------*/
+
+
+}
+
+.modal-body{
+border-style:solid;
+border-color:#f0f5f7;
+}
+
+
+.Infoheader{
+padding:10px 10px;
+background-color:#f0f5f7;
+border-bottom:1px solid #d4e3eb;
+border-top:1px solid #d4e3eb;
+font-weight:bold;
+}
+
+
+.informacion{
+margin-top:1em;
+
+border-right:1px solid #d4e3eb;
+border-left:1px solid #d4e3eb;
+border-bottom:1px solid #d4e3eb;
+}
+
+#Informacion_pedido p{
+margin-left:1em;
+font-weight:bold;
+}
+
+
+input, #id_telefono{
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  background-color:#eff1f2;
+  margin-top: -8px;
+  margin-left:3px;
+  height: 25px;
+  color: #666;
+  padding:2px;
+}
+
+input[type=number]{
+width:5em;
+}
+
+
+
+.Buy{
+background-color:;
+margin-top:-1em;
+
+width:40%
+}
+
+.Buy p{
+text-align:center;
+font-weight:bold;
+font-size:2.5em;
+}
+
+.boton{
+text-decoration:none;
+background-color:#ef8d2e;
+color:white;
+padding:7px 7px;
+border-radius:3px;
+}
+
+
+@media(min-width:690px){
+
+.Buy, .User_Data{
+float:left;
+}
+
+}
+@media (max-width:690px){
+
+.Buy{
+margin-top:1em;
+}
+
+.Buy{
+width:100%;
+}
+
+.User_Data{
+width:95%;
+}
+
+input{
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  background-color:#eff1f2;
+  margin-top: -8px;
+  margin-left:3px;
+  height: 10px;
+  color: #666;
+  padding:7px;
+
+}
+
+input[type=number]{
+width:5em;
+}
+
+.Buy p{
+text-align:center;
+font-weight:bold;
+font-size:1.5em;
+}
+
+.boton{
+text-decoration:none;
+background-color:#ef8d2e;
+color:white;
+padding:7px 7px;
+border-radius:3px;
+}
+
+
+
+
 }

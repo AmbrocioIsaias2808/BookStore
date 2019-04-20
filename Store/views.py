@@ -19,22 +19,27 @@ def CrearPedido(request,ISBN):
                                         time.strftime("%M"), time.strftime("%d"), time.strftime("%H"),
                                         str(random.randrange(1000, 9999)))
     inventario = get_object_or_404(Stock, ISBN=ISBN)
+    Libro=Libros.objects.get(ISBN=ISBN)
+    Stocks=Stock.objects.get(ISBN=ISBN)
     if request.method == "POST":
         form1 = FCrearPedido(request.POST)
         form2=FSolicitarStock(request.POST,instance=inventario)
         if form1.is_valid() and form2.is_valid():
+            referencia = request.POST.get('Referencia')
+            print("Referencia:",referencia," ISBN: ",ISBN)
             inventario=form2.save(commit=False)
             post = form1.save(commit=False)
             post.save()
             inventario.save()
-            return redirect('/')
+            InformacionDelPedido=Pedidos.objects.get(Referencia=referencia)
+            return render(request,"Store/Pagos.html",{"Pedido":InformacionDelPedido,"Libro":Libro})
 
     else:
         form1 = FCrearPedido()
         form2=FSolicitarStock(instance=inventario)
-    Libro=Libros.objects.get(ISBN=ISBN)
-    Stocks=Stock.objects.get(ISBN=ISBN)
-    redirect('/')
-    return render(request,"Store/Pedido.html",{"fPedido":form1,"Libro":Libro,"Stock":Stocks,"Inventario":form2,"REFERENCE":reference})
+    return render(request,"Store/Pedidos.html",{"fPedido":form1,"Libro":Libro,"Stock":Stocks,"Inventario":form2,"REFERENCE":reference})
 
 
+def EditarInformacionPedido(request,Referencia):
+
+    pass
