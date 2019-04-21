@@ -9,6 +9,8 @@
 {% block content %}
 
 {% for Libros in RBusqueda%}
+
+
 <div class="Mbook" style="background-image: url('{{Libros.Portada.url}}');">
 <a class="link" href="#" onclick="clickmodal('{{Libros.ISBN}}')">
     <div  class="info">

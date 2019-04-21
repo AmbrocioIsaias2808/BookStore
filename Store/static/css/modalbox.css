@@ -23,7 +23,7 @@ position:relative;
   border: 1px solid #888;
   border-radius: 10px 10px 10px 10px;
   width: 80%; /* Could be more or less, depending on screen size */
-  height:150%;
+  height:200%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-name: animatetop;
   animation-duration: 0.5s
@@ -224,10 +224,10 @@ margin-left:4.8em;
 
 .Titulo{
 color:black;
-font-size:2.5em;
+font-size:1.7em;
 text-align:center;
 font-weight:bold;
-
+margin-top:1.2em;
 }
 
 
@@ -263,7 +263,7 @@ margin-left:3em;
 
 .Titulo{
 color:black;
-font-size:2.5em;
+font-size:2em;
 text-align:center;
 font-weight:bold;
 
@@ -304,10 +304,10 @@ margin-left:2em;
 
 .Titulo{
 color:black;
-font-size:2em;
+font-size:1.7em;
 text-align:center;
 font-weight:bold;
-
+margin-top:1em;
 }
 
 .modal{
@@ -343,10 +343,10 @@ margin-left:4.4em;
 
 .Titulo{
 color:black;
-font-size:2em;
+font-size:1.3em;
 text-align:center;
 font-weight:bold;
-
+margin-top:1.5em;
 }
 
 .book{

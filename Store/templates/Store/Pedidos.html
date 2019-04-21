@@ -1,6 +1,18 @@
 {% extends "Store/BasePedidoEnvio.html"%}
 {% load static%}
 
+{% block estilos_per %}
+
+{% if Stock.CantidadInv == 0 %}
+<script>
+    location.href ="/Falta_De_Stock";
+</script>
+{% endif %}
+
+{% endblock %}
+
+
+
 {% block informacion%}
 <div class="Infoheader">Informacion de Pedido</div>
 

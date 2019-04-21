@@ -22,21 +22,6 @@ text-decoration:none;
 
 }
 
-.search-bar-div{
-color:#069370;
-height:50px;
-width:40%;
-font-size:36px;
-line-height:60px;
-padding:0 20px;
-background-color:red;
-box-sizing:border-box;
-float:left;
-font-weight:700;
-text-decoration:none;
-
-}
-
 nav{
 float:right;
 }

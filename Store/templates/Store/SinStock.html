@@ -1,0 +1,26 @@
+{% extends "Store/BasePedidoEnvio.html"%}
+{% load static%}
+
+{% block estilos_per %}
+<style>
+    .User_Data{width:100%;text-align:justify;}
+    .User_Data p,.User_Data h1{
+    margin-left:0.5em;margin-right:0.5em;
+    }
+</style>
+{% endblock%}
+
+{%block image%}{% static 'imagenes/SinEjemplares.jpg' %}{%endblock%}
+
+{% block informacion%}
+
+<div class="Infoheader">Ventas Pausadas</div>
+        <div class="User_Data">
+            <h1>Upsssss!</h1>
+            <p>Lamentamos los inconvenientes, si estas visualizando esta pagina y el libro que buscas esta presente
+            en la pagina principal significa que en este momento no tenemos ejemplares disponibles y estamos
+            en proceso de reabastecimiento, si es posible espera unos dias mientras nos resurtimos, una vez mas disculpa las molestias.</p>
+
+            <p><a href="/" class="boton">Regresar</a></p>
+        </div>
+{%endblock%}

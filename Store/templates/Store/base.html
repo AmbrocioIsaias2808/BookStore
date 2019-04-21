@@ -7,9 +7,11 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/estilosbase.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/searchstyles.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/SearchBar.css' %}"/>
     {% block estilos %}
 
     {% endblock %}
@@ -21,9 +23,9 @@
 <section>
 {% block content%}
 {% endblock %}
-    <aside>Barra lateral</aside>
-</section>
 
+</section>
+<aside>Barra lateral</aside>
 {% include 'Store/footer.html' %}
 
 

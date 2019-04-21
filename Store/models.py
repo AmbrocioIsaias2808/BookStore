@@ -14,7 +14,7 @@ class Libros(models.Model):
     Editorial=models.CharField(max_length=50,verbose_name="Editorial ", db_column="Editorial")
     Publicacion=models.DateField(verbose_name="Fecha de Publicacion ", db_column="Publicacion")
     Edicion=models.CharField(max_length=50, verbose_name="Edicion ", db_column="Edicion")
-    Descripcion=models.TextField(max_length=500,verbose_name="Descripcion",db_column="Descripcion",blank=True)
+    Descripcion=models.TextField(max_length=1000,verbose_name="Descripcion",db_column="Descripcion",blank=True)
     Precio=models.DecimalField(max_digits=10,decimal_places=2, verbose_name="Precio ", db_column="Precio")
     Portada=models.ImageField(upload_to="Portadas",verbose_name="Portada del Libro ",db_column="Portada",blank=True, null=True)
 

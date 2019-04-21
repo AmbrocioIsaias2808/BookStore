@@ -1,15 +1,28 @@
+
 <header>
     <a href="/" class="logo">Logo</a>
 
-           <div class="search-bar-div">Search bar</div>
+    <div class="search-bar-div">
+        <form class="example" action="/resultados" method="POST" >{% csrf_token %}
+            <table class="searchitems">
+                <tr>
+                    <td>
+                         <input type="text" placeholder="Search.." name="search">
+                    </td>
+                    <td>  <button type="submit"><i class="fa fa-search"></i></button></td>
+                </tr>
+            </table>
+</form>
+
+    </div>
+
     <div class="menu-toggle"></div>
        <nav>
         <ul class="principal-menu">
-            <li><a href="#" class="Active">Home</a></li>
+            <li><a href="/" class="Active">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
         </ul>
        </nav>
     <div class="clearfix"></div>

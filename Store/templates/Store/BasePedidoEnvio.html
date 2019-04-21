@@ -14,7 +14,7 @@
    <div class="modal-body">
        <!--Modal body code-->
         <div class="book-container">
-      <div class="book" style="background-image: url('{{Libro.Portada.url}}');">
+      <div class="book" style="background-image: url('{{Libro.Portada.url}}{%block image%}{%endblock%}');">
           {% block stock %}
           {%endblock%}
       </div>
