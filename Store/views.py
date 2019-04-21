@@ -43,3 +43,10 @@ def CrearPedido(request,ISBN):
 def EditarInformacionPedido(request,Referencia):
 
     pass
+
+
+def PagoExitoso(request,referencia,nom):
+
+    pedido=Pedidos.objects.get(Referencia=referencia)
+    return render(request, "Store/PagoExitoso.html", {"Pedido": pedido,"Libro":nom})
+    pass

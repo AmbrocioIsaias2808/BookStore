@@ -23,6 +23,16 @@
 
     </div>
           <div class="Buy" >
-              <p ><a href="#" class="boton">Realizar pago</a></p>
+             <div id="paypal-button-container">Metodos de Pago:</div>
           </div>
 {%endblock%}
+
+
+{% block scripts%}
+  <script src="https://www.paypal.com/sdk/js?client-id=AbxV-YOibZT7gpyY1CAWP0POHKTEms1DAV4EfOQ3Vhh7ZX5YS_G_FcqQdlCpWEpiT_IRiWa9pLEMsyxg&currency=MXN"></script>
+<script src="{% static 'js/Paycode.js' %}"> </script>
+<script>
+    set_data({{Pedido.Total}},{{Pedido.Referencia}},"{{Libro.Titulo}}");
+</script>
+
+{% endblock%}

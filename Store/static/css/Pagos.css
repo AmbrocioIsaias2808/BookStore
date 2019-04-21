@@ -18,9 +18,60 @@ width:90%;
 }
 
 .Buy{
+background-color:#f0f5f7;
 margin-top:7.5em;
+margin-left:0.5em;
+padding:10px 10px;
+font-weight:bold;
+width:45%;
+margin-bottom:0.5em;
+
 }
 
-.Buy p{
-width:100%;
+@media (min-width:370px) and (max-width:912px){
+
+.Buy{
+float:left;
+margin-top:1.2em;
+margin-right:0.5em;
 }
+
+.Buy{
+width:90%;
+}
+
+.User_Data{
+float:left;
+width:95%;
+}
+
+
+
+}
+
+
+
+
+@media (max-width:370px){
+
+.Buy{
+float:left;
+margin-top:1.2em;
+margin-left:0.2em;
+margin-right:0.5em;
+}
+
+.Buy{
+width:90%;
+}
+
+.User_Data{
+float:left;
+width:95%;
+}
+
+
+
+}
+
+

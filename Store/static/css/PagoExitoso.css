@@ -1,0 +1,24 @@
+.informacion{
+width:100%;
+}
+
+.Buy{
+margin-top:1em;
+}
+
+.Buy .note{
+font-size:1em;
+text-align:justify;
+}
+
+.Shoot{
+font-size:1.5em;
+float:right;
+margin-right:0.5em;
+color:blue;
+}
+
+.boton{
+float:right;
+margin-right:0.5em;
+}

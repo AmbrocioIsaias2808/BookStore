@@ -1,0 +1,50 @@
+{% extends "Store/BasePedidoEnvio.html"%}
+{% load static%}
+
+{% block estilos_per %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/Pagos.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/PagoExitoso.css' %}"/>
+<style>.book{display:none}</style>
+{% endblock %}
+
+{% block informacion%}
+<div class="Infoheader">Pago Exitoso</div>
+
+        <div class="User_Data">
+            <p class="text"><b>Compra por: </b></p>
+             <p><b>Numero de Referencia:</b> {{Pedido.Referencia}}</p>
+            <p><b>Libro: </b>{{Libro}}</p>
+             <p><b>Cantidad: </b>{{Pedido.Cantidad}}</p>
+             <p><b>Total:</b> ${{Pedido.Total}}</p>
+            <p class="text"><b>Datos de Contacto y envio</b></p>
+            <p><b>Nombre:</b> {{Pedido.Nombre}}</p>
+            <p><b>Correo electronico:</b> {{Pedido.Email}}</p>
+            <p><b>Telefono de contacto:</b> {{Pedido.Telefono}}</p>
+             <p><b>Direccion de Envio:</b> {{Pedido.Direccion}}</p>
+            <p><b>CP:</b> {{Pedido.CP}}<a href="#" id="photo" class="fas fa-camera Shoot" ></a></p>
+        </div>
+
+        <div class="Buy" >
+             <p class="note">Hola {{Pedido.Nombre}} tu pedido esta en camino. Te pedidos algo de paciencia en lo que tu pago es verificado, nos
+                 pondremos en contacto para enviarte la información de envio. Por lo pronto te invito a guardar estos datos para futuras referencias, apuntalos o
+                 has click en el boton para guardar captura en tu dispositivo.
+             </p>
+            <a class="boton" href="/">Seguir Comprando</a>
+          </div>
+{%endblock%}
+
+
+{% block scripts%}
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script>
+html2canvas(document.body, {
+  onrendered (canvas) {
+    var link = document.getElementById('photo');;
+    var image = canvas.toDataURL();
+    link.href = image;
+    link.download = '{{Pedido.Referencia}}.png';
+  }
+ });
+
+</script>
+{% endblock%}
