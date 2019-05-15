@@ -11,10 +11,18 @@ import time
 from django.views.generic import TemplateView
 
 
-
 def search_books(request):
     libros=Libros.objects.all()
     return render(request,"Store/search.html",{"RBusqueda":libros}) #RBusqueda= resultados de busqueda
+
+def Nosotros(request):
+    return render(request,"Store/About_us.html")
+
+def Equipo(request):
+    return render(request,"Store/Team.html")
+
+def Contactanos(request):
+    return render(request,"Store/Contacto.html")
 
 class BarraDeBusqueda(TemplateView):
     def post(self,request):
@@ -48,7 +56,7 @@ def CrearPedido(request,ISBN):
             form2=FSolicitarStock(request.POST,instance=inventario)
             if form1.is_valid() and form2.is_valid():
                 referencia = request.POST.get('Referencia')
-                print("Referencia:",referencia," ISBN: ",ISBN)
+                email = request.POST.get('Email')
                 inventario=form2.save(commit=False)
                 post = form1.save(commit=False)
                 post.save()
@@ -73,3 +81,5 @@ def PagoExitoso(request,referencia,nom):
     pedido=Pedidos.objects.get(Referencia=referencia)
     return render(request, "Store/PagoExitoso.html", {"Pedido": pedido,"Libro":nom})
     pass
+
+

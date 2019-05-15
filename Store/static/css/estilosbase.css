@@ -24,6 +24,7 @@ float:right;
 margin-top:1em;
 width:15%;
 background-color:orange;
+display:none;
 }
 
 
@@ -31,6 +32,6 @@ section{
 margin-top:1em;
 float:left;
 background-color:;
-width:85%;
+width:100%;
 height:80%;
 }

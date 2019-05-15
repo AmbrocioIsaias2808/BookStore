@@ -1,0 +1,60 @@
+{% extends 'Store/About_us.html' %}
+{% load static %}
+   {% block estilos %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Aboutus.css' %}"/>
+<style>
+ol,ul{
+list-style:none;
+}
+.Theader{
+border:1px solid #d4e3eb;
+}
+
+td{
+border:1px solid #d4e3eb;
+}
+table{
+width:90%;
+margin: 0 auto;
+}
+
+.Theader{
+text-align:center;
+background-color:#f0f5f7;
+
+}
+</style>
+    {% endblock %}
+
+{% block content%}
+<H1>Nuestro Equipo de Desarrollo</H1>
+
+<p>Nuestro equipo esta conformado por los desarrolladores:</p>
+
+    <table>
+        <tr>
+            <td class="Theader"><b>Miembro</b></td><td class="Theader"><b>Rol principal</b></td>
+        </tr>
+        <tr>
+        <td><b>Ambrocio Isaias Laureano Castro</b></td><td>Desarrollador principal y coordinador del proyecto BookStore</td>
+        </tr>
+       <tr>
+        <td><b>Manuel Ramirez Bonilla</b></td><td>CEO y principal inversor</td>
+       </tr>
+        <tr>
+        <td><b>Diego Armando Santos Ojeda</b></td><td>El que trae las cocas, ok no</td>
+        </tr>
+        <tr>
+        <td><b>Bruce Lee Campos Alvarado</b></td><td> Diseñador de Base de Datos</td>
+        </tr>
+        <tr>
+        <td><b>Enrique Zamora Alvarez</b></td><td> Director de Relaciones Publicas</td>
+        </tr>
+        <tr>
+        <td><b>Samuel Reyes Martinez</b></td><td> Analista de Datos :v</td>
+
+        </tr>
+    </table>
+
+
+{% endblock %}

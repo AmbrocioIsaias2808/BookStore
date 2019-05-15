@@ -19,7 +19,6 @@ box-sizing:border-box;
 float:left;
 font-weight:700;
 text-decoration:none;
-
 }
 
 nav{
@@ -53,7 +52,7 @@ color:#fff;
 transition:0.5s;
 }
 
-@media(max-width:969px){
+@media(max-width:1063px){
 .menu-toggle{
 display:block;
 width:40px;
