@@ -10,14 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Store/urls.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Store/templates/Store/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -35,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/Store/templates/Store/Pedidos.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
+              <caret line="23" column="10" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -56,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/Store/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="8" column="84" lean-forward="true" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="89" />
+              <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="89" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -76,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Store/templates/Store/About_us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="40">
+              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -89,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/Store/templates/Store/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#header#0;n#!!top" expanded="true" />
                 <element signature="e#244#250#0" expanded="true" />
@@ -153,7 +150,6 @@
         <option value="$PROJECT_DIR$/Store/templates/Store/BasePedidoEnvio.html" />
         <option value="$PROJECT_DIR$/Store/templates/Store/SinStock.html" />
         <option value="$PROJECT_DIR$/Store/static/css/SearchBar.css" />
-        <option value="$PROJECT_DIR$/Store/templates/Store/base.html" />
         <option value="$PROJECT_DIR$/Store/static/css/searchstyles.css" />
         <option value="$PROJECT_DIR$/Store/static/css/estilosbase.css" />
         <option value="$PROJECT_DIR$/Store/templates/Store/search.html" />
@@ -167,6 +163,7 @@
         <option value="$PROJECT_DIR$/Store/templates/Store/Contacto.html" />
         <option value="$USER_HOME$/Desktop/correos/correos.py" />
         <option value="$PROJECT_DIR$/Store/views.py" />
+        <option value="$PROJECT_DIR$/Store/templates/Store/base.html" />
       </list>
     </option>
   </component>
@@ -333,7 +330,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +341,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49627978" visible="true" weight="0.46698874" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49627978" visible="true" weight="0.46698874" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037202" side_tool="true" weight="0.36714977" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -535,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Store/templates/Store/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Store/templates/Store/BasePedidoEnvio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -572,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/Store/templates/Store/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#a#0;n#header#0;n#!!top" expanded="true" />
             <element signature="e#244#250#0" expanded="true" />
@@ -605,7 +595,7 @@
     <entry file="file://$PROJECT_DIR$/Store/templates/Store/Pedidos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
+          <caret line="23" column="10" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -622,7 +612,7 @@
     <entry file="file://$PROJECT_DIR$/Store/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="84" lean-forward="true" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="89" />
+          <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="89" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -641,8 +631,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Store/templates/Store/About_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="40">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Store/templates/Store/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
