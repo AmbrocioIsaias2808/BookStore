@@ -14,4 +14,4 @@ Este es un proyecto que realice para la clase de Ingenieria de Software con el p
 <p align="center"><img src="READMEFILES\ (8).png" alt=" (1)" style="width:75%;" /></p><br>
 <p align="center"><img src="READMEFILES\ (9).png" alt=" (1)" style="width:75%;" /></p><br>
 <p align="center"><img src="READMEFILES\ (10).png" alt=" (1)" style="width:75%;" /></p><br>
-<p align="center"><img src="READMEFILES\ (11).png" alt=" (1)" style="width:75%;" /></p><br>
+<p align="center"><img src="READMEFILES\ (11).PNG" alt=" (1)" style="width:75%;" /></p><br>
